@@ -10,6 +10,7 @@ import ExamsSwipper from "./components/Exams Swipper/ExamsSwipper";
 import Test from "./components/navbar/Test";
 import OurChildrenLovesUs from "./components/CardsOurChildrenLoveus/OurChildrenLovesUs";
 import OurCourses from "./components/Our courses/OurCourses";
+import HeroToppers from "./components/Hero Section Toppers Swipper/HeroToppers";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <ExamsSwipper />
       <WhyParbandhan />
       <Footer />
+      <HeroToppers />
     </div>
   );
 }
