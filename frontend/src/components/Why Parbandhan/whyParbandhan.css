@@ -1,0 +1,222 @@
+section.whyparbandhan{
+    /* background-color: #f7f7f7; */
+    background-image: linear-gradient(to bottom, #f2f6ff, #eae4ef, #e3d3db, #d9c3c3, #c9b5ab);
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+    /* border-top: 2px solid #9fbecf45; */
+    /* border-bottom: 2px solid #9fbecf45; */
+}
+
+section.whyparbandhan .outer-heading{
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2rem;
+    line-height: 4rem;
+    color: rgb(230,79,2);
+}
+
+section.whyparbandhan .outer-heading  span{
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+
+section.whyparbandhan .forms-container{
+    display: flex;
+    gap: 5rem;
+    padding: 0 5rem;
+    margin-top: 3rem;
+}
+
+section.whyparbandhan .forms-container .left, section.whyparbandhan .forms-container .right{
+    /* background: red; */
+    border-radius: 8px;
+    padding: 2rem;
+    /* border: 1px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+section.whyparbandhan .forms-container .left{
+    width: 50rem;
+    background: rgb(244,238,222);
+    background: linear-gradient(208deg, rgba(244,238,222,1) 0%, rgba(239,252,252,1) 17%, rgba(242,233,221,0.9809173669467787) 98%);
+}
+
+section.whyparbandhan .forms-container .left .heading{
+    color: rgb(19, 6, 55);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section.whyparbandhan .forms-container .left .input-containers-2-element{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.whyparbandhan .forms-container .left .text-input{
+    padding: 0.6rem 0.5rem;
+    font-size: 1rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-top: 0.8rem;
+    width: 45%;
+}
+
+section.whyparbandhan .forms-container .left .btn-container{
+    margin-top: 1.8rem;
+}
+
+section.whyparbandhan .forms-container .left .submit-btn{
+    padding: 0.6rem 0.9rem;
+    background: rgb(230,79,2);
+    color: #FFFFFF;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition-duration: 0.5s;
+    letter-spacing: 1px;
+}
+
+section.whyparbandhan .forms-container .left .submit-btn:hover{
+    cursor: pointer;
+    background: rgb(19, 6, 55);
+}
+
+section.whyparbandhan .forms-container .right{
+    background: rgb(244,238,222);
+    background: linear-gradient(324deg, rgba(244,238,222,1) 0%, rgba(239,252,252,1) 17%, rgba(242,233,221,0.9809173669467787) 98%);
+}
+
+section.whyparbandhan .forms-container .right .enroll-btn{
+    padding: 1rem;
+    background: rgb(230,79,2);
+    color: #FFFFFF;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-top: 5rem;
+    transition-duration: 0.5s;
+    letter-spacing: 1px;
+}
+
+section.whyparbandhan .forms-container .right .first-line{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(19, 6, 55);
+}
+
+section.whyparbandhan .forms-container .right .second-line{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: rgb(230,79,2);
+}
+
+section.whyparbandhan .forms-container .right .main-content{
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #696969;
+}
+
+section.whyparbandhan .forms-container .right .btn-container{
+    margin: 10rem 0 1rem 1rem;
+}
+
+section.whyparbandhan .forms-container .right .enroll-btn:hover{
+    cursor: pointer;
+    background: rgb(19, 6, 55);
+}
+
+
+
+
+/* custom SELECT */
+
+.forms-container .left label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-top: 1rem;
+}
+.forms-container .left label:before {
+    content: "";
+    height: 31px;
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    width: 22px;
+    background: #fff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    pointer-events: none;
+    display: block;
+  }
+.forms-container .left label:after {
+    content: " ";
+    position: absolute;
+    right: 15px;
+    top: 46%;
+    margin-top: -3px;
+    z-index: 2;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6.9px 4px 0 4px;
+    border-color: #aaa transparent transparent transparent;
+    pointer-events: none;
+  }
+.forms-container .left label select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 30px 0 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    line-height: 36px;
+    height: 36px;
+    background: #fff;
+    margin: 0 5px 5px 0;
+    width: 100%;
+  }
+  
+.forms-container .left select::-ms-expand {
+    display: none;
+    transition-duration: 1s;
+  }
+
+
+@media (max-width: 1200px){
+    section.whyparbandhan .forms-container .right .btn-container{
+        margin: 0;
+        position: absolute;
+        bottom: 3rem;
+    }
+    section.whyparbandhan .forms-container .left .btn-container{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 800px){
+    section.whyparbandhan .forms-container{
+        flex-direction: column;
+    }
+    section.whyparbandhan .forms-container .left, section.whyparbandhan .forms-container .right{
+        margin: auto;
+        width: 80%;
+    }
+    section.whyparbandhan .forms-container .right .btn-container{
+        margin-top: 5rem;
+        position: static;
+    }
+}
+
+@media (max-width: 550px){
+    section.whyparbandhan .forms-container .left, section.whyparbandhan .forms-container .right{
+        width: 90%;
+    }
+    section.whyparbandhan .forms-container{
+        padding: 0 1.5rem;
+    }
+    
+}

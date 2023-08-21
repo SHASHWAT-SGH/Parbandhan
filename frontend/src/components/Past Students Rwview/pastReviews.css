@@ -1,0 +1,291 @@
+/* swipper start */
+
+.past-students-review-container .swiper {
+    width: 20rem;
+    height: 28rem;
+    margin: auto;
+  }
+  
+  .past-students-review-container .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(1n) {
+    /* background-color: #ffa303; */
+    background-color: #dab8cc;
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(2n) {
+    /* background-color: #a2abce; */
+    background-color: #a9a9e1;
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(3n) {
+    /* background-color: #ff483a; */
+    background-color: #83b8f3;
+  }
+/*   
+  .past-students-review-container .swiper-slide:nth-child(4n) {
+    background-color: #a27e43
+    background-color: rgb(211, 122, 7);
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(5n) {
+    background-color: #818c57;
+    background-color: rgb(118, 163, 12);
+  } */
+  
+  /* .past-students-review-container .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+  }
+  
+  .past-students-review-container .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  } */
+
+  
+/* swipper end */
+
+.past-students-review-container{
+    padding: 4rem 2rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.past-students-review-container .shape{
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: -1;
+    top: 1rem;
+    left: -1rem;
+}
+
+.past-students-review-container .blob{
+    mix-blend-mode: multiply;
+    position: absolute;
+    z-index: -1;
+    top: 1rem;
+    right: -5rem;
+    width: 20rem;
+}
+
+.past-students-review-container .heading{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(230,79,2);
+    text-align: center;
+    position: relative;
+}
+
+.past-students-review-container .heading span.circle::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 166, 0, 0.552);
+    border-radius: 50%;
+    position: absolute;
+    top: -0.7rem;
+    left: 26rem;
+    z-index: -1;
+}
+
+.past-students-review-container .review{
+    position: relative;
+    width: 30rem;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.423);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 3rem;
+    font-size: 1.3rem;
+    text-align: justify;
+    /* background-image: linear-gradient(to left bottom, #dab8cc, #d4b2d0, #caaed5, #bcabdb, #a9a9e1, #98b0eb, #83b8f3, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+    background-image: linear-gradient(to left bottom, #e8c7da, #e3c8e0, #decae6, #d7cdea, #cfcfee, #cad5f2, #c7dbf5, #c5e0f6, #c9e9f8, #d0f1fa, #daf8fb, #e5fffd);
+}
+
+.past-students-review-container .review .message{
+  margin-bottom: 8.5rem;
+}
+
+.past-students-review-container .first-row{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+
+.past-students-review-container .review .photo-container{
+    position: absolute;
+    bottom: 1rem;
+    width: 73%;
+}
+
+.past-students-review-container .review .photo{
+    width: 8rem;
+    height: 8rem;
+    /* background: red; */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    /* margin: auto; */
+    margin: auto;
+    border: 2px solid white;
+    outline: 3px solid gray;
+    justify-content: center;
+}
+
+.past-students-review-container .review .photo img{
+  width: 100%;
+}
+
+.slider-review .message{
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.slider-review .photo{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid white;
+    outline: 3px solid gray;
+}
+
+@media (max-width: 1450px){
+  .past-students-review-container .review{
+    /* width: 27rem; */
+  }
+
+  .past-students-review-container .heading span.circle::before{
+    top: -0.5rem;
+    left: 25rem;
+  }
+}
+
+@media (max-width: 1370px){
+  .past-students-review-container .review{
+    /* width: 24rem; */
+  }
+
+  .past-students-review-container .heading span.circle::before{
+    left: 22rem;
+  }
+
+  .past-students-review-container .swiper{
+    height: 30rem;
+  }
+}
+
+@media (max-width: 1280px){
+  .past-students-review-container .review{
+    width: 27rem;
+  }
+
+  .past-students-review-container .heading span.circle::before{
+    left: 18rem;
+  }
+}
+
+@media (max-width: 1230px){
+  .past-students-review-container .review{
+    width: 25rem;
+  }
+
+  .past-students-review-container .heading span.circle::before{
+    left: 18rem;
+  }
+
+  /* .past-students-review-container .swiper{
+    margin-top: 2rem;
+  } */
+
+  .past-students-review-container .review{
+    text-align: center;
+  }
+}
+
+@media (max-width: 1050px){
+  .past-students-review-container .review{
+    width: 23rem;
+  }
+
+  /* .past-students-review-container .swiper{
+    margin-top: 3.5rem;
+  } */
+}
+
+@media (max-width: 840px){
+  .past-students-review-container .first-row{
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .past-students-review-container .review{
+    width: 80vw;
+    margin: auto;
+  }
+
+  .past-students-review-container .shape{
+    top: 8rem;
+  }
+
+  .past-students-review-container .swiper {
+    width: 20rem;
+    height: 27rem;
+    /* margin-top: -1rem; */
+  }
+
+  .past-students-review-container .heading span.circle::before{
+    left: 11rem;
+  }
+}
+
+@media (max-width: 530px){
+  .past-students-review-container .review{
+    width: 75vw;
+    margin: auto;
+  }
+
+  .past-students-review-container .heading span.circle::before{
+    left: 2rem;
+  }
+
+  .past-students-review-container .blob{
+    top: 11rem;
+    right: -5rem;
+  }
+
+  .past-students-review-container .shape{
+    top: 84rem;
+    left: 60vw;
+  }
+}
+
+@media (max-width: 425px){
+  .past-students-review-container .review{
+    width: 70vw;
+  }
+}

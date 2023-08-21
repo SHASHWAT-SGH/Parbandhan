@@ -1,0 +1,81 @@
+.our-children-loves-us{
+    background: #d9e5f2;
+    padding: 4rem 6rem;
+}
+
+.our-children-loves-us > .top{
+    position: relative;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(230,79,2);
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.351);
+}
+
+.our-children-loves-us .top .threeStars{
+    left: 0;
+    top: -1rem;
+    position: absolute;
+    width: 5rem;
+    transform: rotate(190deg);
+}
+
+.our-children-loves-us .top span{
+    display: inline-block;
+}
+
+.our-children-loves-us .top span img{
+    width: 2.5rem;
+}
+
+.our-children-loves-us .middle{
+    display: flex;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+.our-children-loves-us .left, .our-children-loves-us .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+
+@media (max-width: 1050px){
+    .our-children-loves-us{
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 840px){
+    .our-children-loves-us .middle{
+        flex-direction: column;
+    }
+    .our-children-loves-us .left, .our-children-loves-us .right{
+        width: 100%;
+    }
+    .our-children-loves-us .right{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 460px){
+    .our-children-loves-us .top .threeStars{
+        left: -0.5rem;
+        top: -1.5rem;
+        
+    }
+    
+}
+
+@media (max-width: 390px){
+    .our-children-loves-us .top .threeStars{
+        left: -2rem;
+        top: -2rem;
+        
+    }
+    
+}

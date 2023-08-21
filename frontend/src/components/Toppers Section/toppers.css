@@ -1,0 +1,93 @@
+/* Slider Start*/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+/*slider end */
+
+
+.topper-section-container{
+    background-image: linear-gradient(to right bottom, #e64f02, #e96b00, #e98400, #e89c00, #e6b202);
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 100rem !important;
+}
+
+.celebration-img{
+    width: 100%;
+}
+
+.topper-section-container .heading{
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2px 3px 0px #898999;
+}
+
+.topper-details-container{
+    width: 100%;
+    position: absolute;
+    top: 11rem;
+    background: #904a04ae;
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+}
+
+.topper-details-container .topper{
+    padding: 2rem 3rem;
+    padding-bottom: 2.1rem;
+}
+
+.topper .image{
+    width: 10rem;
+    height: 10rem;
+    background: red;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    border: 3px solid white;
+    outline: 4px solid orange;
+}
+
+.topper .name{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+
+.topper .batch{
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
