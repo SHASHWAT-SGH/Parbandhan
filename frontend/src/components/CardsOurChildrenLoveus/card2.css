@@ -9,6 +9,15 @@
     width: 100%;
 }
 
+.ourStudentsLovesUsCard2 .top video{
+    width: 100%;
+    
+}
+
+.ourStudentsLovesUsCard2 .top img:hover{
+    cursor: pointer;
+}
+
 .ourStudentsLovesUsCard2 .bottom{
     /* background: green; */
     min-height: 5rem;
@@ -22,6 +31,8 @@
 .ourStudentsLovesUsCard2 .bottom .quote-wrapper img{
     width: 2rem;
 }
+
+
 
 .ourStudentsLovesUsCard2 .bottom .text{
     margin-top: 0.4rem;

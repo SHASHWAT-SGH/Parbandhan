@@ -53,6 +53,7 @@
 .exams-list-container .top, .exams-list-container .middle,.exams-list-container .bottom{
   min-width: 50%;
   background-image: linear-gradient(to left, #b39cd0, #c994ca, #df8bbd, #f183a8, #fd7e8e, #fa8775, #ee9462, #dda156, #c0b465, #a6c183, #96caa5, #98cfc2);
+  /* background-color: rgb(240, 141, 92); */
   padding: 1.3rem 3rem;
   align-items: center;
   justify-content: center;

@@ -14,52 +14,24 @@
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
   
   .past-students-review-container .swiper-slide:nth-child(1n) {
-    /* background-color: #ffa303; */
-    background-color: #dab8cc;
+    /* background-color: #dab8cc; */
+    background-color: #F27D42;
   }
   
   .past-students-review-container .swiper-slide:nth-child(2n) {
-    /* background-color: #a2abce; */
-    background-color: #a9a9e1;
+    /* background-color: #a9a9e1; */
+    background-color: #558DCA;
   }
   
   .past-students-review-container .swiper-slide:nth-child(3n) {
-    /* background-color: #ff483a; */
-    background-color: #83b8f3;
+    /* background-color: #83b8f3; */
+    background-color: #31bfea;
   }
-/*   
-  .past-students-review-container .swiper-slide:nth-child(4n) {
-    background-color: #a27e43
-    background-color: rgb(211, 122, 7);
-  }
-  
-  .past-students-review-container .swiper-slide:nth-child(5n) {
-    background-color: #818c57;
-    background-color: rgb(118, 163, 12);
-  } */
-  
-  /* .past-students-review-container .swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
-  }
-  
-  .past-students-review-container .swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
-  }
-  
-  .past-students-review-container .swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
-  }
-  
-  .past-students-review-container .swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
-  }
-  
-  .past-students-review-container .swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
-  } */
 
   
 /* swipper end */
@@ -113,8 +85,8 @@
     width: 30rem;
     background: white;
     border-radius: 20px;
-    border: 2px solid rgba(128, 128, 128, 0.423);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     padding: 3rem;
     font-size: 1.3rem;
     text-align: justify;

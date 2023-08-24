@@ -1,0 +1,152 @@
+.home-window{
+    padding: 4rem;
+    padding-top: 4.4rem;
+    display: flex;
+    padding-bottom: 0;
+    overflow-x: hidden;
+}
+
+.home-window .left{
+    width: 45%;
+    font-weight: 800;
+    font-size: 3.6rem;
+    /* background: white; */
+    /* height: 90vh; */
+    padding-top: 4rem;
+    /* padding-bottom: 26rem; */
+}
+.home-window .left div .heighlight-text{
+    color: rgb(230,79,2);
+    /* color: rgb(34, 143, 197); */
+}
+
+.home-window .left .lower-text{
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'REM', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.home-window .right{
+    width: 55%;
+}
+.right{
+    position: relative;
+}
+
+.right .penta-shape{
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 25rem;
+    z-index: -1;
+}
+
+.right .content-pannel{
+    /* background: red; */
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.right .content-pannel .left-hero{
+    /* background: red; */
+    width: 23rem;
+    height: 35rem;
+    border-radius: 200px 2.5% 150px 150px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 8rem;
+}
+
+.right .content-pannel .left-hero img{
+    width: 100%;
+}
+
+.right .content-pannel .right-hero{
+    /* background: red; */
+    width: 23rem;
+    height: 35rem;
+    border-radius: 2.5% 150px 150px 200px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 14rem;
+}
+
+.right .content-pannel .right-hero img{
+    width: 100%;
+}
+
+@media (max-width: 1270px){
+    .home-window .left{
+        width: 38%;
+    }
+
+    .home-window .right{
+        width: 62%;
+    }
+    .home-window .left{
+        padding-bottom: 20rem;
+    }
+}
+
+@media (max-width: 1100px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 960px){
+    html{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 850px){
+    .home-window{
+        flex-direction: column;
+    }
+
+    .home-window .left, .home-window .right{
+        width: 100%;
+    }
+
+    .home-window .left{
+        padding: 2rem 0 2rem 0;
+    }
+
+    .right .content-pannel .left-hero, .right .content-pannel .right-hero{
+        margin: 2rem auto 6rem;
+        height: 29rem;
+    }
+
+    .right .content-pannel .right-hero{
+        margin-top: 4.5rem;
+    }
+
+    .right .penta-shape{
+        width: 18rem;
+        top: -2rem;
+        right: -4rem;
+    }
+}
+
+@media (max-width: 480px){
+    .home-window{
+        padding-left:2rem ;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 430px){
+    .right .content-pannel .left-hero, .right .content-pannel .right-hero{
+        margin: 2rem auto 6rem;
+        height: 25rem;
+    }
+    .right .content-pannel .right-hero{
+        margin-top: 4.5rem;
+    }
+}

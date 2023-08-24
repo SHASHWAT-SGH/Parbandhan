@@ -34,11 +34,14 @@
 .topper-section-container .image-bg-wrapper img{
     mix-blend-mode: multiply;
     width: 100%;
+    z-index: -10;
+
+    display: none;
 }
 
 .topper-section-container .image-bg-wrapper{
     position: absolute;
-    top: -6rem;
+    /* top: -6rem; */
     left: 0;
     width: 20rem;
     /* transform: rotate(20deg); */
@@ -49,20 +52,32 @@
     position: absolute;
     top: -5rem;
     right: 2rem;
+    display: none;
+}
+
+.topper-section-container .svg-wrapper{
+    position: absolute;
+    width: 100%;
+    top: -1rem;
+    z-index: -1;
+    left: 0;
+    /* display: none; */
 }
 
 .topper-section-container{
     padding: 0 3rem 5rem 3rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
     position: relative;
+    overflow-x: hidden;
 }
 
 .topper-section-container .heading{
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     font-weight: bold;
     color: rgb(230,79,2);
+    margin-top: 2.5rem;
 }
 
 .topper-section-container .wrapper{
@@ -101,6 +116,8 @@
 .topper-section-container .container .bottom{
     height: 90%;
     padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
 }
 
 .topper-section-container .container .bottom .data-container{
@@ -110,9 +127,10 @@
     border-radius: 12px;
     padding: 2rem;
     padding-top:6rem;
-    text-align: left;
+    text-align: center;
 
 }
+
 
 .topper-section-container .container .bottom .data-container .name{
     font-weight: 800;
@@ -126,9 +144,11 @@
 }
 
 .topper-section-container .container .bottom .data-container .institute{
-    font-weight: bold;
+    /* font-weight: bold;
     color: rgb(17, 6, 46);
-    font-size: 1.4rem;
+    font-size: 1.4rem; */
+    font-weight: 600;
+    color: rgba(17, 23, 50, 0.6)
 }
 
 @media (max-width: 550px){

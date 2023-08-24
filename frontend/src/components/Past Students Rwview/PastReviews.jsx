@@ -11,6 +11,7 @@ import { EffectCards } from "swiper/modules";
 function PastReviews() {
   return (
     <div className="past-students-review-container">
+      {/*
       <img src={shape} alt="" className="shape" />
       <img src={blob} alt="" className="blob" />
       <div className="heading">
@@ -204,9 +205,10 @@ function PastReviews() {
               </div>
             </div>
           </div>
-          {/* <div className="review"></div> */}
+          }
         </div>
       </div>
+    */}
     </div>
   );
 }

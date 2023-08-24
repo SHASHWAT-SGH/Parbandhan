@@ -1,23 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./card2.css";
 import quote from "../../assets/svg/quotes.svg";
-import imageBack from "../../assets/Images/testVideoBackground.png";
 
-function Card2() {
+function Card2({ thumbnail, videoUrl, review }) {
+  const [video, setVideo] = useState(false);
+
+  const playVideo = (e) => {
+    e.target.style.display = "none";
+    setVideo(true);
+  };
+
   return (
     <div className="ourStudentsLovesUsCard2">
       <div className="top">
-        <img src={imageBack} alt="" />
+        <img src={thumbnail} alt="" onClick={playVideo} />
+        {video ? <video src={videoUrl} autoPlay controls muted /> : ""}
       </div>
       <div className="bottom">
         <div className="quote-wrapper">
           <img src={quote} alt="" />
         </div>
-        <div className="text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit
-          vel repellat ipsum dolor sit amet consectetur adipisicing elit. Nisi
-          suscipit vel repellat??
-        </div>
+        <div className="text">{review}</div>
       </div>
     </div>
   );
