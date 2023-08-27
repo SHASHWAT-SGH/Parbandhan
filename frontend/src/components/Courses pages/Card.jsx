@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.css";
 
-function Card({ imgsrc, name, details, footerDetails }) {
+function Card({ imgsrc, name, details, footerDetails, priceOld, priceNew }) {
   return (
     <div className="course-card-wrapper">
       <div className="course">
@@ -21,6 +21,9 @@ function Card({ imgsrc, name, details, footerDetails }) {
               return <li key={index}>{item}</li>;
             })}
           </ul>
+        </div>
+        <div className="price">
+          &#8377;{priceNew} <strike>{priceOld}</strike>
         </div>
       </div>
     </div>

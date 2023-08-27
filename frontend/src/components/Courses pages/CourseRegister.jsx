@@ -1,28 +1,73 @@
 import React, { useState } from "react";
 import "./courseRegister.css";
 import Card from "./Card";
+import { useNavigate, useParams } from "react-router-dom";
+
 function CourseRegister() {
   const [showQr, setShowQr] = useState(false);
+  const { id } = useParams();
+
+  const navigate = useNavigate();
 
   return (
     <section className="course-page">
       <div className="main">
         <div className="left">
-          <Card
-            imgsrc={
-              "https://img.freepik.com/free-vector/college-entrance-exam-concept-illustration_114360-10202.jpg?w=2000"
-            }
-            name="PREMIUM PROGRAM"
-            details={["Two Year Program", "For class 11"]}
-            footerDetails={[
-              "450+ Hours Sessions",
-              "All Enterence Exams coveres.",
-              "Test Series: All India Mock tests on the actual exams pattern.",
-              "Exclusive Study Matrial included",
-              "Topic Tests included",
-              "Slot based doubt sessions",
-            ]}
-          />
+          {id === "premiumprogram" ? (
+            <Card
+              imgsrc={
+                "https://img.freepik.com/free-vector/college-entrance-exam-concept-illustration_114360-10202.jpg?w=2000"
+              }
+              name="PREMIUM PROGRAM"
+              details={["Two Year Program", "For class 11"]}
+              footerDetails={[
+                "450+ Hours Sessions",
+                "All Enterence Exams coveres.",
+                "Test Series: All India Mock tests on the actual exams pattern.",
+                "Exclusive Study Matrial included",
+                "Topic Tests included",
+                "Slot based doubt sessions",
+              ]}
+              priceNew="99"
+              priceOld="199"
+            />
+          ) : id === "swiftprogram" ? (
+            <Card
+              imgsrc={
+                "https://img.freepik.com/free-vector/college-entrance-exam-concept-illustration_114360-13742.jpg"
+              }
+              name="SWIFT PROGRAM"
+              details={["One Year Program", "For class 12"]}
+              footerDetails={[
+                "300+ Hours Sessions",
+                "All Enterence Exams covered.",
+                "Test Series: All India Mock tests on the actual exams pattern.",
+                "Exclusive Study Matrial included",
+                "Topic Tests included",
+                "Slot based doubt sessions",
+              ]}
+              priceNew="199"
+              priceOld="299"
+            />
+          ) : id === "crashcourse" ? (
+            <Card
+              imgsrc={"https://xamsprep.com/images/crash.png"}
+              name="CRASH COURSE"
+              details={["", "For class 12"]}
+              footerDetails={[
+                "150+ Hours Sessions",
+                "All Enterence Exams covered.",
+                "Test Series: All India Mock tests on the actual exams pattern.",
+                "Exclusive Study Matrial included",
+                "Topic Tests included",
+                "Slot based doubt sessions",
+              ]}
+              priceNew="99"
+              priceOld="199"
+            />
+          ) : (
+            navigate("/pagenotfound")
+          )}
         </div>
         <div className="right">
           <div className="wrapper">

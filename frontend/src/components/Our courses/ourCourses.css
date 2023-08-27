@@ -120,6 +120,15 @@
     cursor: pointer;
 }
 
+.our-courses .courses-wrapper .course .marquee{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #a2d8ff4c;
+    color: red;
+    text-transform: capitalize;
+    padding: 0.1rem 0;
+}
+
 @media (max-width: 1118px){
 
     .our-courses .svg1{

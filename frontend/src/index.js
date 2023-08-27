@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ProductsContextProvider } from "./contexts/productsContext";
 import HomePage from "./pages/HomePage";
+import PurchaseCourse from "./pages/PurchaseCourse";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <HomePage />,
+      },
+      {
+        path: "/courses/:id",
+        element: <PurchaseCourse />,
       },
     ],
   },

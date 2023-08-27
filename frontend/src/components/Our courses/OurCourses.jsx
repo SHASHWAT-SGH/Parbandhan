@@ -1,7 +1,9 @@
 import React from "react";
 import "./ourCourses.css";
+import { useNavigate } from "react-router-dom";
 
 function OurCourses() {
+  const navigate = useNavigate();
   return (
     <section className="our-courses" id="courses">
       <svg
@@ -28,20 +30,21 @@ function OurCourses() {
       </svg>
       <div className="heading">Our Courses</div>
       <div className="sub-heading">Find Best Course For Yourself!</div>
-      {/* <div className="nav-wrapper">
-        <div className="nav-link">link</div>
-        <div className="nav-link active">link</div>
-        <div className="nav-link">link</div>
-        <div className="nav-link">link</div>
-        <div className="nav-link">link</div>
-      </div> */}
       <div className="courses-wrapper">
-        <div className="course">
+        <div
+          className="course"
+          onClick={() => {
+            navigate("/courses/premiumprogram");
+          }}
+        >
           <div className="image">
             <img
               src="https://img.freepik.com/free-vector/college-entrance-exam-concept-illustration_114360-10202.jpg?w=2000"
               alt=""
             />
+          </div>
+          <div className="marquee">
+            <marquee>Enroll today to get early bird discount</marquee>
           </div>
           <div className="name">PREMIUM PROGRAM</div>
           <div className="detail">Two Year Program</div>
@@ -53,12 +56,20 @@ function OurCourses() {
             <div className="btn-enroll"></div>
           </div>
         </div>
-        <div className="course">
+        <div
+          className="course"
+          onClick={() => {
+            navigate("/courses/swiftprogram");
+          }}
+        >
           <div className="image">
             <img
               src="https://img.freepik.com/free-vector/college-entrance-exam-concept-illustration_114360-13742.jpg"
               alt=""
             />
+          </div>
+          <div className="marquee">
+            <marquee>Enroll today to get early bird discount</marquee>
           </div>
           <div className="name">SWIFT PROGRAM</div>
           <div className="detail">One Year Program</div>
@@ -70,9 +81,17 @@ function OurCourses() {
             <div className="btn-enroll"></div>
           </div>
         </div>
-        <div className="course">
+        <div
+          className="course"
+          onClick={() => {
+            navigate("/courses/crashcourse");
+          }}
+        >
           <div className="image">
             <img src="https://xamsprep.com/images/crash.png" alt="" />
+          </div>
+          <div className="marquee">
+            <marquee>Enroll today to get early bird discount</marquee>
           </div>
           <div className="name">EXTENDED CRASH COURSE</div>
           <div className="detail">Crash Course</div>

@@ -8,18 +8,14 @@ import InfiniteSwiper from "../components/Infinite swipper/InfiniteSwiper ";
 
 function HomePage() {
   return (
-    <div>
-      {/* <Navbar /> */}
-      {/* <ContactUsSideBar /> */}
-      {/* <CourseRegister /> */}
+    <>
       <Homepage />
       <InfiniteSwiper />
       <OurCourses />
       <OurChildrenLovesUs />
       <ExamsSwipper />
       <WhyParbandhan />
-      {/* <Footer /> */}
-    </div>
+    </>
   );
 }
 
