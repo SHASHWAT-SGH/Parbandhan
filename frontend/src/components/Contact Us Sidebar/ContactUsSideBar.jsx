@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import "./contactUsSideBar.css";
 
 function ContactUsSideBar() {
-  const [showContact, setShowContact] = useState(false);
-
   const fadeInAnimation = () => {
     document
       .querySelector(".contact-us-sidebar-wrapper .open-btn")
@@ -11,12 +8,12 @@ function ContactUsSideBar() {
         const messageElement = document.querySelector(
           ".contact-us-modal-wrapper"
         );
-        messageElement.style.display = "inline-block";
+        messageElement.style.display = "flex";
         messageElement.classList.remove("fadeout");
         messageElement.classList.add("fadein");
         messageElement.addEventListener("animationend", () => {
           messageElement.classList.remove("fadein");
-          messageElement.style.display = "block";
+          messageElement.style.display = "flex";
         });
       });
   };
@@ -43,21 +40,17 @@ function ContactUsSideBar() {
         className="contact-us-sidebar-wrapper"
         onClick={() => {
           fadeInAnimation();
-          setShowContact(true);
         }}
       >
         <div className="open-btn">Contact Us</div>
       </div>
 
-      <div
-        className="contact-us-modal-wrapper"
-        style={{ display: showContact ? "flex" : "none" }}
-      >
+      <div className="contact-us-modal-wrapper">
         <div className="contact-us-modal">
           <span
             className="cross"
             onClick={() => {
-              setShowContact(false);
+              fadeOutAnimation();
             }}
           >
             X

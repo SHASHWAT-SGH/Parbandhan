@@ -15,7 +15,7 @@ import img2 from "../../assets/studentsImages/Mitul Gupta.jpg";
 
 function OurChildrenLovesUs() {
   return (
-    <section className="our-children-loves-us">
+    <section className="our-children-loves-us" id="testimonials">
       <div className="top">
         <img src={threeStars} alt="" className="threeStars" />
         Our Students{" "}

@@ -1,5 +1,5 @@
 .course-card-wrapper{
-    /* display: flex; */
+    display: flex;
 }
 
 .course-card-wrapper .course{
@@ -11,12 +11,13 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: 1px solid gray;
     padding-bottom: 1rem;
-    width: 20rem;
+    width: 70%;
     transition-duration: 0.4s;
+    margin: auto;
 }
 
 .course-card-wrapper .course .image{
-    height: 15rem;
+    height: 19rem;
     display: flex;
     /* background: red; */
 }
@@ -41,7 +42,12 @@
     margin-top: 0.5rem;
 }
 
-.course-card-wrapper .course:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+.course-card-wrapper .card-footer{
+    padding: 0.6rem 1rem;
+    text-align: center;
+}
+
+.course-card-wrapper .card-footer ul li{
+    border-top: 1px solid rgba(107, 107, 107, 0.459);
+    padding: 0.4rem;
 }

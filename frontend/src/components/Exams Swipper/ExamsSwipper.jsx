@@ -34,7 +34,7 @@ function ExamsSwipper() {
 
   return (
     <>
-      <div className="exams-list-container">
+      <section className="exams-list-container" id="universities">
         <div className="heading">With us you can crack!</div>
         <Swiper
           slidesPerView={"auto"}
@@ -82,7 +82,7 @@ function ExamsSwipper() {
             );
           })}
         </Swiper>
-      </div>
+      </section>
     </>
   );
 }

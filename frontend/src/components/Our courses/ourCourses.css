@@ -5,6 +5,7 @@
     /* margin-top: 5rem; */
     /* padding-top: 3rem; */
     position: relative;
+    /* overflow-x: hidden; */
     
 }
 
@@ -117,4 +118,53 @@
 .our-courses .courses-wrapper .course:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+@media (max-width: 1118px){
+
+    .our-courses .svg1{
+        top: 6rem;
+        
+    }
+    
+    .our-courses .svg2{
+        top: -8rem;
+    }
+}
+
+@media (max-width: 762px){
+
+    .our-courses .svg1{
+        top: 3rem;
+    }
+    
+    .our-courses .svg2{
+        top: -6rem;
+    }
+    .our-courses .heading{
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 460px){
+
+    .our-courses .svg1{
+        top: 4rem;
+    }
+    
+    .our-courses .svg2{
+        top: -4rem;
+    }
+}
+
+@media (max-width: 403px){
+
+    .our-courses .svg1{
+        top: 2rem;
+    }
+    
+    .our-courses .svg2{
+        top: -4rem;
+    }
+
 }

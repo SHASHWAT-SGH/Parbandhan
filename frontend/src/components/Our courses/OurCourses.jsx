@@ -3,7 +3,7 @@ import "./ourCourses.css";
 
 function OurCourses() {
   return (
-    <section className="our-courses">
+    <section className="our-courses" id="courses">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"

@@ -3,7 +3,7 @@ import "./whyParbandhan.css";
 
 function WhyParbandhan() {
   return (
-    <section className="whyparbandhan">
+    <section className="whyparbandhan" id="joinUs">
       <div className="outer-heading">
         Why Parbandhan Career Institute?
         <br />

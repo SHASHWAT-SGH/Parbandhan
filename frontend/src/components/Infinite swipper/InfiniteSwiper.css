@@ -65,7 +65,7 @@
 }
 
 .topper-section-container{
-    padding: 0 3rem 5rem 3rem;
+    padding: 0 0.2rem 5rem 0.2rem;
     margin-top: 2rem;
     position: relative;
     overflow-x: hidden;
@@ -151,7 +151,42 @@
     color: rgba(17, 23, 50, 0.6)
 }
 
-@media (max-width: 550px){
+@media (max-width: 1202px){
+    .topper-section-container .heading{
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 1193px){
+    .topper-section-container .svg-wrapper{
+        top: 1rem;
+    }
+    .topper-section-container .heading{
+        margin-top: 2.3rem;
+    }
+}
+
+@media (max-width: 660px){
+    .topper-section-container .svg-wrapper{
+        width: 118%;
+    }
+}
+
+@media (max-width: 887px){
+    .topper-section-container .wrapper{
+        height: 27rem;
+    }
+}
+
+
+@media (max-width: 570px){
+    .topper-section-container .svg-wrapper{
+        width: 138%;
+    }
+    .topper-section-container{
+        padding: 0 3rem 5rem 3rem;
+    }
+
     .exams-list-container{
         padding: 0 1rem;
     }
@@ -160,6 +195,34 @@
         width: 100% !important;
     }
       
+}
+
+@media (max-width: 490px){
+    .topper-section-container .svg-wrapper{
+        width: 200%;
+        top: 2rem;
+        left: -10rem;
+    }
+    .topper-section-container{
+        padding: 0 2rem 5rem 2rem;
+    }
+
+}
+
+@media (max-width: 400px){
+    .topper-section-container .svg-wrapper{
+        width: 250%;
+        top: 2rem;
+        left: -10rem;
+    }
+}
+
+@media (max-width: 350px){
+    .topper-section-container .svg-wrapper{
+        width: 390%;
+        top: 2rem;
+        left: -10rem;
+    }
 }
 
 @media (max-width: 850px){

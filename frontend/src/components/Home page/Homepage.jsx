@@ -29,7 +29,7 @@ function Homepage() {
 
   return (
     <>
-      <div className="home-window">
+      <section className="home-window">
         <div className="left">
           <div>
             <span className="heighlight-text">Parbandhan</span> : Your Bridge to
@@ -41,8 +41,9 @@ function Homepage() {
           <div className="lower-text">
             <span className="heighlight-text">"</span>Guiding You to a{" "}
             <span className="heighlight-text">Brighter Tomorrow:</span>
-            <br />
+            <br className="br-tomorrow" />
             <span style={{ marginLeft: "1rem" }}>Your </span>
+            <br className="br-your" />
             <span className="text heighlight-text" ref={el} />
           </div>
         </div>
@@ -50,7 +51,7 @@ function Homepage() {
         <div className="right">
           <HeroToppers />
         </div>
-      </div>
+      </section>
       <div className="lottie-scroll-down-wrapper">
         <div className="message-scroll">Scroll Down</div>
         <div className="lottie-scroll-down">

@@ -1,24 +1,26 @@
 import React from "react";
 import "./card.css";
 
-function Card() {
+function Card({ imgsrc, name, details, footerDetails }) {
   return (
     <div className="course-card-wrapper">
       <div className="course">
         <div className="image">
-          <img
-            src="https://img.freepik.com/free-vector/college-entrance-exam-concept-illustration_114360-10202.jpg?w=2000"
-            alt=""
-          />
+          <img src={imgsrc} alt="" />
         </div>
-        <div className="name">PREMIUM PROGRAM</div>
-        <div className="detail">Two Year Program</div>
+        <div className="name">{name}</div>
+        <div className="detail">{details[0]}</div>
         <div className="detail">
-          For class 11<sup>th</sup>
+          {details[1]}
+          <sup>th</sup>
         </div>
 
         <div className="card-footer">
-          <div className="btn-enroll"></div>
+          <ul>
+            {footerDetails.map((item, index) => {
+              return <li key={index}>{item}</li>;
+            })}
+          </ul>
         </div>
       </div>
     </div>

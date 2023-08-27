@@ -8,13 +8,16 @@ nav .image img{
     width: 100%;
 }
 
+nav .image img:hover{
+  cursor: pointer;
+}
+
 li {
     list-style: none;
-  }
-  a {
     text-decoration: none;
     color: rgb(38, 38, 57);
   }
+
   
   .nav {
     display: flex;
@@ -30,9 +33,9 @@ li {
     box-shadow: 0 4px 2px -2px rgba(179, 175, 175, 0.2);
   }
 
-  .nav a.active{
+  .nav li.active{
     color: rgb(230,79,2);
-    font-weight: bolder;
+
   }
 
   .nav__brand {
@@ -46,7 +49,7 @@ li {
     gap: 3rem;
   }
 
-  .nav a{
+  .nav li{
     transition-duration: 0.4s;
   }
 
@@ -61,7 +64,7 @@ li {
     transition: 0.3s ease-in;
   }
 
-  .nav a:hover{
+  .nav li:hover{
     color: rgb(230,79,2);
     cursor: pointer;
 }

@@ -4,6 +4,7 @@
     background-color: rgb(230,79,2);
     border-radius: 3px;
     position: fixed;
+    z-index: 10;
     right: -3rem;
     top: 43%;
     padding: 1rem 1.2rem 0.8rem 1.2rem;
@@ -23,7 +24,10 @@
     background-color: rgba(213, 191, 152, 0.271);
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .contact-us-modal{
@@ -88,10 +92,10 @@
 }
 
 .fadein {
-	animation: 700ms fadeIn ease-in-out;
+	animation: 300ms fadeIn ease-in-out;
 }
 .fadeout {
-	animation: 700ms fadeOut ease-in-out;
+	animation: 300ms fadeOut ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -110,4 +114,11 @@
 	100% {
 		opacity: 0;
 	}
+}
+
+
+@media (max-width: 485px){
+    .contact-us-modal{
+        width: 85%;
+    }
 }

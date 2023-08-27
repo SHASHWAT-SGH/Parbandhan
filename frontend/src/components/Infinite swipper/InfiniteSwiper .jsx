@@ -145,7 +145,7 @@ export default function App() {
   });
   return (
     <>
-      <div className="topper-section-container">
+      <section className="topper-section-container" id="toppers">
         <div className="image-bg-wrapper">
           <img src={shape} alt="" />
         </div>
@@ -180,7 +180,7 @@ export default function App() {
         >
           {silders}
         </Swiper>
-      </div>
+      </section>
     </>
   );
 }
