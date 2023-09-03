@@ -47,7 +47,9 @@ section.course-page .main .right .wrapper .qr-wrapper{
     border-radius: 10px;
     overflow: hidden;
 }
-
+section.course-page .main .right .wrapper .qr-wrapper img{
+    width: 100%;
+}
 section.course-page .main .right .qr-container{
     display: flex;
     width: 100%;

@@ -30,7 +30,7 @@ const navbarContents = {
     management: [
       "cuet",
       "iim indore, ipm",
-      "iim rithal, ipm",
+      "iim rohtak, ipm",
       "iim bodhgaya, ipm",
       "iim ranchi, ipm",
       "iim jammu",

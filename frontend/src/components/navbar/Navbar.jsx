@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +13,7 @@ function Navbar() {
       const scrollPosition = window.scrollY;
 
       sections.forEach((section, index) => {
-        const sectionTop = section.offsetTop;
+        const sectionTop = section.offsetTop - 50;
         const sectionBottom = sectionTop + section.clientHeight;
 
         if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -30,7 +30,7 @@ function Navbar() {
 
   const scrollToSection = (index) => {
     const sections = document.querySelectorAll("section");
-    const sectionTop = sections[index].offsetTop;
+    const sectionTop = sections[index].offsetTop - 50;
     window.scrollTo({ top: sectionTop, behavior: "smooth" });
   };
 
@@ -92,7 +92,7 @@ function Navbar() {
           className={activeSection === 5 ? "active nav__item" : "nav__item"}
           onClick={() => scrollToSection(5)}
         >
-          Join Us
+          Get Counselled
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>

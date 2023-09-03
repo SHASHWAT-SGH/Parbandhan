@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./courseRegister.css";
 import Card from "./Card";
 import { useNavigate, useParams } from "react-router-dom";
+import qr from "../../assets/QR/qr-modified.jpg";
 
 function CourseRegister() {
   const [showQr, setShowQr] = useState(false);
@@ -74,10 +75,7 @@ function CourseRegister() {
             <div className="heading">Enroll NOW</div>
             <div className="qr-container">
               <div className="qr-wrapper">
-                <img
-                  src="https://cdn.britannica.com/17/155017-050-9AC96FC8/Example-QR-code.jpg"
-                  alt=""
-                />
+                <img src={qr} alt="" />
                 <div
                   className="cover"
                   style={{ display: showQr ? "none" : "block" }}

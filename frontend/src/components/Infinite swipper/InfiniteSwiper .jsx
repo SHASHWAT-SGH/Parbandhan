@@ -32,9 +32,9 @@ export default function App() {
       img: "diya bansal.jpg",
     },
     {
-      name: "Priya Goyal",
-      institute: "IIM-Bodhgaya Christ-Yashwanthpur-Symbiosis-Pune",
-      img: "Priya Goyal.jpg",
+      name: "Priyal Goyal",
+      institute: "IIM-Bodhgaya Christ-Yeshwanthpur-Symbiosis-Pune",
+      img: "Priyal Goyal.jpg",
     },
     {
       name: "Gavish Singla",

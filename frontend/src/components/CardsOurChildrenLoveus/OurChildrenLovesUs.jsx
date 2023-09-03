@@ -10,7 +10,7 @@ import thumb2 from "../../assets/Images/Santa.jpg";
 import video1 from "../../assets/videos/1.mp4";
 import video2 from "../../assets/videos/2.mp4";
 
-import img1 from "../../assets/studentsImages/Priya Goyal.jpg";
+import img1 from "../../assets/studentsImages/Priyal Goyal.jpg";
 import img2 from "../../assets/studentsImages/Mitul Gupta.jpg";
 
 function OurChildrenLovesUs() {
@@ -30,8 +30,8 @@ function OurChildrenLovesUs() {
             review={
               "Parbandhan Career Institute has been my launchpad to success. With unwavering support from dedicated faculty, I'm now set to thrive at IIM Bodh Gaya. Gratitude and excitement define my journey!"
             }
-            name={"Priya Goyal"}
-            quaifiedFor={"IIM Bodhgaya - Christ-Yeshwanthpur Symbiosis - Noida"}
+            name={"Priyal Goyal"}
+            quaifiedFor={"IIM Bodhgaya - Christ-Yeshwanthpur Symbiosis - Pune"}
             imgsrc={img1}
           />
           <Card2
@@ -56,7 +56,7 @@ function OurChildrenLovesUs() {
             }
             name={"Mitul Gupta"}
             quaifiedFor={
-              "IIM Rohtak - Christ Central Capmus Symbiosis - Pune NMIMS"
+              "IIM Rohtak - Christ Central Campus Symbiosis - Pune NMIMS"
             }
             imgsrc={img2}
           />

@@ -18,28 +18,21 @@ function WhyParbandhan() {
           <label>
             <select>
               <option>Select Program</option>
-              <option>Crash Course</option>
               <option>One Year Program</option>
               <option>Two Year Program</option>
-              <option>Hybrid Program</option>
-              <option>Non Classroom Program</option>
-              <option>International Education</option>
+              <option>Crash Course</option>
             </select>
           </label>
           {/* custom select ends */}
           {/* custom select start */}
-          <label>
+          {/* <label>
             <select>
               <option>Select Course</option>
-              <option>Management(BMS/BBE/BBA(FIA)/BBA/IIM-I)</option>
-              <option>Mass Communication</option>
-              <option>Hotel Management </option>
-              <option>B.Com</option>
-              <option>Economics</option>
-              <option>BCA</option>
-              <option>Financial Courses</option>
+              <option>One Year Program</option>
+              <option>Two Year Program</option>
+              <option>Crash Course</option>
             </select>
-          </label>
+          </label> */}
           {/* custom select ends */}
 
           <div className="input-containers-2-element">
