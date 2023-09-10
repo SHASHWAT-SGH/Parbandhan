@@ -2,7 +2,7 @@ section.whyparbandhan{
     /* background-color: #f7f7f7; */
     background-image: linear-gradient(to bottom, #f2f6ff, #eae4ef, #e3d3db, #d9c3c3, #c9b5ab);
     margin-top: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     /* border-top: 2px solid #9fbecf45; */
     /* border-bottom: 2px solid #9fbecf45; */
 }
@@ -39,6 +39,7 @@ section.whyparbandhan .forms-container .left, section.whyparbandhan .forms-conta
 
 section.whyparbandhan .forms-container .left{
     width: 50rem;
+    position: relative;
     background: rgb(244,238,222);
     background: linear-gradient(208deg, rgba(244,238,222,1) 0%, rgba(239,252,252,1) 17%, rgba(242,233,221,0.9809173669467787) 98%);
 }
@@ -185,6 +186,15 @@ section.whyparbandhan .forms-container .right .enroll-btn:hover{
     transition-duration: 1s;
   }
 
+
+  .forms-container .left .error_msg{
+    color: green;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    padding: 1rem;
+}
 
 @media (max-width: 1200px){
     section.whyparbandhan .forms-container .right .btn-container{

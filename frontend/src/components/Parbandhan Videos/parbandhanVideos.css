@@ -1,0 +1,12 @@
+section.parbandhan-videos{
+    background-color: #c9b5ab;
+    padding-bottom: 4rem;
+}
+
+section.parbandhan-videos .container{
+    padding: 1rem 3rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -5,6 +5,7 @@ import OurChildrenLovesUs from "../components/CardsOurChildrenLoveus/OurChildren
 import ExamsSwipper from "../components/Exams Swipper/ExamsSwipper";
 import WhyParbandhan from "../components/Why Parbandhan/WhyParbandhan";
 import InfiniteSwiper from "../components/Infinite swipper/InfiniteSwiper ";
+import ParbandhanVideos from "../components/Parbandhan Videos/ParbandhanVideos";
 
 function HomePage() {
   return (
@@ -15,6 +16,7 @@ function HomePage() {
       <OurChildrenLovesUs />
       <ExamsSwipper />
       <WhyParbandhan />
+      <ParbandhanVideos />
     </>
   );
 }

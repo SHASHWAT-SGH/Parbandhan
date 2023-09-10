@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./contactUsSideBar.css";
+import axios from "axios";
 
 function ContactUsSideBar() {
+  const [errorMesage, setErrorMesage] = useState("");
   const fadeInAnimation = () => {
     document
       .querySelector(".contact-us-sidebar-wrapper .open-btn")
@@ -34,6 +37,52 @@ function ContactUsSideBar() {
       });
   };
 
+  const [formData, setFormData] = useState({
+    type: "call back request",
+    fname: "",
+    lname: "",
+    email: "",
+    phone: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData(() => {
+      return {
+        ...formData,
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    setErrorMesage("Sending...");
+
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID_CONTACT;
+    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
+    const data = {
+      service_id: serviceId,
+      template_id: templateId,
+      user_id: publicKey,
+      template_params: formData,
+    };
+
+    try {
+      const res = await axios.post(
+        "https://api.emailjs.com/api/v1.0/email/send",
+        data
+      );
+      res.data === "OK"
+        ? setErrorMesage("Request sent successfully.")
+        : setErrorMesage("Error occured while sending request.");
+    } catch (error) {
+      console.log("error: " + error);
+      setErrorMesage("Error occured while sending request.");
+    }
+  };
+
   return (
     <>
       <div
@@ -61,13 +110,17 @@ function ContactUsSideBar() {
             our team will get in touch with you within a day during working
             hours!
           </p>
-          <form action="">
+
+          <form onSubmit={sendEmail}>
             <div>
               <label htmlFor="fname">First Name</label>
               <input
                 id="fname"
+                name="fname"
                 type="text"
                 placeholder="Enter your first name"
+                required
+                onChange={handleChange}
               />
             </div>
 
@@ -75,21 +128,43 @@ function ContactUsSideBar() {
               <label htmlFor="lname">Last Name</label>
               <input
                 id="lname"
+                name="lname"
                 type="text"
                 placeholder="Enter your last name"
+                required
+                onChange={handleChange}
               />
             </div>
 
             <div>
               <label htmlFor="email">Email Address</label>
-              <input id="email" type="email" placeholder="abc@example.com" />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="abc@example.com"
+                required
+                onChange={handleChange}
+              />
             </div>
 
             <div>
               <label htmlFor="phone">Mobile Number</label>
-              <input id="phone" type="tel" placeholder="1234567890" />
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="1234567890"
+                required
+                onChange={handleChange}
+              />
             </div>
+
+            <button type="submit" className="submit-btn">
+              Request a callback
+            </button>
           </form>
+          <div className="error_msg">{errorMesage}</div>
         </div>
       </div>
     </>
